@@ -5,14 +5,14 @@
 
   <remote name="CyanogenMod"
           fetch="git://github.com/CyanogenMod/"
-          revision="stable/cm-12.1-YOG4P" />
+          revision="stable/cm-12.1-YOG7D" />
 
   <remote name="cm-b2g"
           fetch="git://github.com/cm-b2g/"
-          revision="b2g/cm-12.1-YOG4P" />
+          revision="b2g/cm-12.1-YOG7D" />
 
   <default remote="caf"
-           revision="refs/tags/android-5.1.1_r3"
+           revision="refs/tags/android-5.1.1_r29"
            sync-j="4"/>
 
   <!-- B2G specific things. -->
@@ -45,6 +45,7 @@
   <remove-project name="platform/bionic" />
   <remove-project name="platform/external/bluetooth/bluedroid" />
   <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/libselinux" />
   <remove-project name="platform/external/skia" />
   <remove-project name="platform/external/zlib" />
@@ -59,21 +60,36 @@
   <project name="android_bionic" path="bionic" remote="CyanogenMod" />
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="CyanogenMod" />
 
+  <project name="android_external_bash" path="external/bash" remote="CyanogenMod" />
   <project name="android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="CyanogenMod" />
   <project name="android_external_busybox" path="external/busybox" remote="CyanogenMod" />
+  <project name="android_external_curl" path="external/curl" remote="CyanogenMod" />
   <project name="android_external_e2fsprogs" path="external/e2fsprogs" remote="CyanogenMod" />
   <project name="android_external_exfat" path="external/exfat" remote="CyanogenMod" />
+  <project name="android_external_f2fs-tools" path="external/f2fs-tools" remote="CyanogenMod" />
+  <project name="android_external_ffmpeg" path="external/ffmpeg" remote="CyanogenMod" />
   <project name="android_external_fsck_msdos" path="external/fsck_msdos" remote="CyanogenMod" />
   <project name="android_external_fuse" path="external/fuse" remote="CyanogenMod" />
+  <project name="android_external_htop" path="external/htop" remote="CyanogenMod" />
+  <project name="android_external_libncurses" path="external/libncurses" remote="CyanogenMod" />
   <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="CyanogenMod" />
   <project name="android_external_libselinux" path="external/libselinux" remote="CyanogenMod" />
   <project name="android_external_libtar" path="external/libtar" remote="CyanogenMod" />
   <project name="android_external_libxml2" path="external/libxml2" remote="CyanogenMod" />
+  <project name="android_external_lsof" path="external/lsof" remote="CyanogenMod" />
   <project name="android_external_lz4" path="external/lz4" remote="CyanogenMod" />
   <project name="android_external_lzma" path="external/lzma" remote="CyanogenMod" />
+  <project name="android_external_nano" path="external/nano" remote="CyanogenMod" />
+  <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="CyanogenMod" />
+  <project name="android_external_openssh" path="external/openssh" remote="CyanogenMod" />
   <project name="android_external_pigz" path="external/pigz" remote="CyanogenMod" />
+  <project name="android_external_rsync" path="external/rsync" remote="CyanogenMod" />
   <project name="android_external_skia" path="external/skia" remote="CyanogenMod" />
+  <project name="android_external_stagefright-plugins" path="external/stagefright-plugins" remote="CyanogenMod" />
+  <project name="android_external_unrar" path="external/unrar" remote="CyanogenMod" />
+  <project name="android_external_vim" path="external/vim" remote="CyanogenMod" />
   <project name="android_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="CyanogenMod" />
+  <project name="android_external_zip" path="external/zip" remote="CyanogenMod" />
   <project name="android_external_zlib" path="external/zlib" remote="CyanogenMod" />
 
   <project name="android_hardware_broadcom_wlan" path="hardware/broadcom/wlan" remote="CyanogenMod" />
@@ -85,34 +101,28 @@
   <project name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="CyanogenMod" />
 
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="CyanogenMod" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8226" remote="CyanogenMod" revision="stable/cm-12.1-caf-8226-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8610" remote="CyanogenMod" revision="stable/cm-12.1-caf-8610-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG4P" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG4P" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG7D" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG7D" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG7D" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG7D" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG7D" />
 
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="CyanogenMod" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8226" remote="CyanogenMod" revision="stable/cm-12.1-caf-8226-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8610" remote="CyanogenMod" revision="stable/cm-12.1-caf-8610-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG4P" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG4P" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG7D" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG7D" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG7D" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG7D" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG7D" />
 
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="CyanogenMod" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8226" remote="CyanogenMod" revision="stable/cm-12.1-caf-8226-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8610" remote="CyanogenMod" revision="stable/cm-12.1-caf-8610-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG4P" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG4P" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/apq8084" remote="CyanogenMod" revision="stable/cm-12.1-caf-8084-YOG7D" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8916" remote="CyanogenMod" revision="stable/cm-12.1-caf-8916-YOG7D" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8960" remote="CyanogenMod" revision="stable/cm-12.1-caf-8960-YOG7D" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="CyanogenMod" revision="stable/cm-12.1-caf-8974-YOG7D" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8994" remote="CyanogenMod" revision="stable/cm-12.1-caf-8994-YOG7D" />
 
   <project name="android_hardware_ril" path="hardware/ril" remote="CyanogenMod" />
-  <project name="android_hardware_ril" path="hardware/ril-caf" remote="CyanogenMod" revision="stable/cm-12.1-caf-YOG4P" />
+  <project name="android_hardware_ril" path="hardware/ril-caf" remote="CyanogenMod" revision="stable/cm-12.1-caf-YOG7D" />
 
   <project name="android_system_extras" path="system/extras" remote="CyanogenMod" />
   <project name="android_system_media" path="system/media" remote="CyanogenMod" />
