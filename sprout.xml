@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<manifest>
+  
+  <remote name="github"
+         fetch="git://github.com"/>
+
+  <include name="base-l-cm.xml"/>
+
+  <!-- device tree -->
+  <project path="device/google/sprout4" name="Anik1199/android_device_google_sprout4" remote="github" revision="b2g" />
+
+  <!-- common -->
+  <project path="device/google/sprout-common" name="Anik1199/android_device_google_sprout-common" remote="github" revision="b2g" />
+
+  <!-- kernel -->
+  <project path="kernel/mediatek/sprout" name="Anik1199/android_kernel_mediatek_sprout" remote="github" revision="b2g" />
+
+  <!-- vendor -->
+  <project path="vendor/google" name="Anik1199/proprietary_vendor_google" remote="github" revision="b2g" />
+
+</manifest>
