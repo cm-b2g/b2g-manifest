@@ -2,6 +2,7 @@
 <manifest>
 
   <include name="base-l.xml"/>
+  <include name="locales.xml"/>
 
   <remote name="CyanogenMod"
           fetch="git://github.com/CyanogenMod/"
