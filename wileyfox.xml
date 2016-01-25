@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <manifest>
 
-  <include name="base-l-cm.xml"/>
+  <include name="base-m-cm.xml"/>
 
-  <project path="device/wileyfox/crackling" name="android_device_wileyfox_crackling" remote="cm-b2g" />
+  <project path="device/wileyfox/crackling" name="CyanogenMod/android_device_wileyfox_crackling" remote="GitHub" />
   <project path="device/cyanogen/msm8916-common" name="CyanogenMod/android_device_cyanogen_msm8916-common" remote="GitHub" />
 
   <project path="external/mm-dash" name="CyanogenMod/android_external_mm-dash" remote="GitHub" />
 
-  <project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" remote="cm-b2g" />
+  <project path="kernel/cyanogen/msm8916" name="CyanogenMod/android_kernel_cyanogen_msm8916" remote="GitHub" revision="cm-13.0-amss-2.1" />
 
-  <project path="vendor/wileyfox" name="TheMuppets/proprietary_vendor_wileyfox" remote="GitHub" revision="stable/cm-12.1-YOG7D"/>
+  <project path="vendor/wileyfox" name="TheMuppets/proprietary_vendor_wileyfox" remote="GitHub" revision="stable/cm-13.0-ZNH0E" />
 
 </manifest>
