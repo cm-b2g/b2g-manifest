@@ -4,13 +4,12 @@
   <include name="base-l-cm.xml"/>
 
   <project path="device/yu/tomato" name="android_device_yu_tomato" remote="cm-b2g" />
-  <project path="device/cyanogen/msm8939-common" name="android_device_cyanogen_msm8939-common" remote="cm-b2g" />
+  <project path="device/cyanogen/msm8939-common" name="CyanogenMod/android_device_cyanogen_msm8939-common" remote="GitHub" />
 
-  <project path="external/mm-dash" name="android_external_mm-dash" remote="CyanogenMod" />
+  <project path="external/mm-dash" name="CyanogenMod/android_external_mm-dash" remote="GitHub" />
 
-  <project path="kernel/cyanogen/msm8916" name="android_kernel_cyanogen_msm8916" remote="CyanogenMod" revision="cm-12.1-amss-1.0.2" />
+  <project path="kernel/cyanogen/msm8916" name="CyanogenMod/android_kernel_cyanogen_msm8916" remote="GitHub" revision="cm-12.1-amss-1.0.2" />
 
-  <remote name="TheMuppets" fetch="git://github.com/TheMuppets/" />
-  <project path="vendor/yu" name="proprietary_vendor_yu" remote="TheMuppets" revision="stable/cm-12.1-YOG7D"/>
+  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="GitHub" revision="stable/cm-12.1-YOG7D"/>
 
 </manifest>
