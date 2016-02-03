@@ -10,7 +10,7 @@
           revision="b2g/cm-13.0-ZNH0E" />
 
   <default remote="caf"
-           revision="refs/tags/android-6.0.1_r10"
+           revision="refs/tags/android-6.0.1_r13"
            sync-j="4"/>
 
   <include name="base-m.xml"/>
@@ -19,7 +19,7 @@
   <!-- B2G specific things. -->
   <remove-project name="platform/frameworks/wilhelm" />
 
-  <project name="platform_frameworks_wilhelm" path="frameworks/wilhelm" remote="cm-b2g" revision="b2g-6.0.1_r10"/>
+  <project name="platform_frameworks_wilhelm" path="frameworks/wilhelm" remote="cm-b2g" revision="b2g-6.0.1_r13"/>
   <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
 
 <!-- B2G merged on CyanogenMod -->
