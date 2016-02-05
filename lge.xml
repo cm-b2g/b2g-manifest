@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <include name="base-l-cm.xml"/>
+
+<!-- LG G2 -->
+  <project path="device/lge/d802" name="android_device_lge_d802" remote="cm-b2g" />
+  <project path="device/lge/g2-common" name="android_device_lge_g2-common" remote="cm-b2g" />
+  <project path="kernel/lge/msm8974" name="android_kernel_lge_msm8974" remote="cm-b2g" />
+
+<!-- LG G3 -->
+  <project path="device/lge/d855" name="android_device_lge_d855" remote="cm-b2g" />
+  <project path="device/lge/g3-common" name="android_device_lge_g3-common" remote="cm-b2g" />
+  <project path="kernel/lge/g3" name="android_kernel_lge_g3" remote="cm-b2g" />
+
+  <project name="thermanager" path="hardware/sony/thermanager" groups="device" remote="b2g" revision="sony-aosp-l"/>
+
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="GitHub" revision="stable/cm-12.1-YOG7D"/>
+
+</manifest>
