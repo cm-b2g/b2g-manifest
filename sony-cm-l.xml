@@ -21,7 +21,7 @@
   <project name="vendor-qcom-opensource-dataservices" path="vendor/qcom/opensource/dataservices" remote="b2g" revision="master" />
 
   <!-- Common platform specific things -->
-  <project name="device-sony-common" path="device/sony/common" groups="device" remote="b2g" revision="sony-aosp-l"/>
+  <project name="device-sony-common" path="device/sony/common" groups="device" remote="cm-b2g" revision="b2g/cm-12.1-YOG7D"/>
 
   <!-- Shinano platform specific things -->
   <project name="device-sony-shinano" path="device/sony/shinano" groups="device" remote="b2g" revision="sony-aosp-l"/>
