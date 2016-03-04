@@ -18,12 +18,17 @@
   <project name="mkqcdtbootimg" path="hardware/sony/mkqcdtbootimg" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="thermanager" path="hardware/sony/thermanager" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="timekeep" path="hardware/sony/timekeep" groups="device" remote="b2g" revision="master"/>
+  <project name="vendor-qcom-opensource-dataservices" path="vendor/qcom/opensource/dataservices" remote="b2g" revision="master" />
+
+  <!-- Common platform specific things -->
+  <project name="device-sony-common" path="device/sony/common" groups="device" remote="b2g" revision="sony-aosp-l"/>
 
   <!-- Shinano platform specific things -->
   <project name="device-sony-shinano" path="device/sony/shinano" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="device-sony-aries" path="device/sony/aries" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="device-sony-leo" path="device/sony/leo" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="device-sony-scorpion" path="device/sony/scorpion" groups="device" remote="b2g" revision="sony-aosp-l"/>
+  <project name="device-sony-scorpion_windy" path="device/sony/scorpion_windy" groups="device" remote="b2g" revision="sony-aosp-l"/>
   <project name="device-sony-sirius" path="device/sony/sirius" groups="device" remote="b2g" revision="sony-aosp-l"/>
 
   <!-- Rhine platform specific things -->
