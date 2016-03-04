@@ -3,10 +3,10 @@
 
   <include name="base-l-cm.xml"/>
 
-  <remove-project name="android_external_busybox" />
+  <remove-project name="CyanogenMod/android_external_busybox" />
   <project name="android_external_busybox" path="external/busybox" remote="b2g" revision="sony-aosp-l" />
 
-  <remove-project name="android_external_libnfc-nci" />
+  <remove-project name="CyanogenMod/android_external_libnfc-nci" />
   <project name="platform_external_libnfc-nci" path="external/libnfc-nci" remote="b2g" revision="sony-aosp-l"/>
 
   <!-- Sony platform specific things -->
