@@ -65,6 +65,7 @@
   <project name="CyanogenMod/android_external_bash" path="external/bash" remote="GitHub" />
   <project name="CyanogenMod/android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="GitHub" />
   <project name="CyanogenMod/android_external_busybox" path="external/busybox" remote="GitHub" />
+  <project name="CyanogenMod/android_external_connectivity" path="external/connectivity" remote="GitHub" />
   <project name="CyanogenMod/android_external_curl" path="external/curl" remote="GitHub" />
   <project name="CyanogenMod/android_external_e2fsprogs" path="external/e2fsprogs" remote="GitHub" />
   <project name="CyanogenMod/android_external_exfat" path="external/exfat" remote="GitHub" />
