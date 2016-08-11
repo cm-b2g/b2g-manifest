@@ -23,7 +23,7 @@
 
 <!-- MOZILLA B2G -->
   <project path="gaia" name="gaia" remote="b2g" revision="master"/>
-  <project path="gecko-dev" name="gecko" remote="mozillaorg" revision="master"/>
+  <project path="gecko-dev" name="gecko" remote="mozilla" revision="master"/>
 
   <project path="dalvik" name="mozilla-b2g/fake-libdvm" revision="master"/>
   <project path="gonk-misc" name="mozilla-b2g/gonk-misc" revision="master"/>
