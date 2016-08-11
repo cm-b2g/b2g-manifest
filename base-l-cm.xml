@@ -5,8 +5,11 @@
            fetch="https://android.googlesource.com"
            revision="refs/tags/android-5.1.1_r1" />
 
-  <remote  name="mozillaorg"
-           fetch="https://git.mozilla.org/releases" />
+  <remote  name="mozilla"
+           fetch="https://github.com/mozilla/" />
+
+  <remote  name="b2g"
+           fetch="https://github.com/mozilla-b2g/" />
 
   <remote  name="CyanogenMod"
            fetch="git://github.com/CyanogenMod/" />
@@ -19,8 +22,8 @@
            sync-j="4" />
 
 <!-- MOZILLA B2G -->
-  <project path="gaia" name="gaia" remote="mozillaorg" revision="master"/>
-  <project path="gecko" name="gecko" remote="mozillaorg" revision="master"/>
+  <project path="gaia" name="gaia" remote="b2g" revision="master"/>
+  <project path="gecko-dev" name="gecko" remote="mozilla" revision="master"/>
 
   <project path="dalvik" name="mozilla-b2g/fake-libdvm" revision="master"/>
   <project path="gonk-misc" name="mozilla-b2g/gonk-misc" revision="master"/>
@@ -31,7 +34,7 @@
   <project path="external/VEX" name="mozilla-b2g/vex" revision="fxos"/>
 
   <project path="external/apitrace" name="apitrace/apitrace" revision="master"/>
-  
+
 <!-- BUILD -->
   <project path="build" name="cm-b2g/platform_build">
     <copyfile dest="Makefile" src="core/root.mk"/>
@@ -214,7 +217,7 @@
   <project path="prebuilts/qemu-kernel" name="mozilla-b2g/platform_prebuilts_qemu-kernel" revision="b2g-5.1.0_r1"/>
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" />
-  
+
 <!-- SYSTEM -->
 <!--
   <project path="system/bluetoothd" name="mozilla-b2g/platform_system_bluetoothd" revision="master"/>
